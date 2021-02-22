@@ -1,1 +1,3 @@
 # SAE_AzureWebApp
+Sample Project with a basic HTML, CSS, JS Strukture.
+Used for a presentation in school for the subject SAE on the topic of hosting a WebApp in MS Azure.
