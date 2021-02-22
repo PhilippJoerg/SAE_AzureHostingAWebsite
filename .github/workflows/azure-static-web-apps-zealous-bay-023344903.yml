@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - /WebsiteBasic/*
+      - /WebsiteBasic/**
 
 jobs:
   build_and_deploy_job:
