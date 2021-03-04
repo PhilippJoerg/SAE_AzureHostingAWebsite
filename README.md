@@ -5,3 +5,6 @@ Used for a presentation in school for the subject SAE on the topic of hosting a 
 
 ## Basic Website
 URL: https://zealous-bay-023344903.azurestaticapps.net
+
+## .Net Website
+URL: https://hostingawebsitewebappdotnet.azurewebsites.net
