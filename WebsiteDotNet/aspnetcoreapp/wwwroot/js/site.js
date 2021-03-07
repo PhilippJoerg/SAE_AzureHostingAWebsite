@@ -12,7 +12,11 @@ function handleFormSubmit(event) {
     const results = document.querySelector('.results pre');
     results.innerText = JSON.stringify(formJSON, null, 2);
   
-    console.log(JSON.stringify(formJSON));
+    var request = new XMLHttpRequest();
+    var url = "https://saewebsitedatatorage.blob.core.windows.net/regdataappservice/"+formJSON.Email+".txt?sp=racwdl&st=2021-03-07T18:28:13Z&se=2022-01-01T02:28:13Z&spr=https&sv=2020-02-10&sr=c&sig=0UH6VgaljBVisyQvsbcvGDfE4gJa6bFOpUwO8UdZvqs%3D"
+    request.open("PUT", url);
+    request.setRequestHeader("x-ms-blob-type","BlockBlob");
+    request.send(JSON.stringify(formJSON));
   }
   
   const form = document.querySelector('.contact-form');

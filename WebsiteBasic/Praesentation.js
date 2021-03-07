@@ -13,8 +13,6 @@ function handleFormSubmit(event) {
   request.open("PUT", url);
   request.setRequestHeader("x-ms-blob-type","BlockBlob");
   request.send(JSON.stringify(formJSON));
-
-  console.log(JSON.stringify(formJSON));
 }
 
 const form = document.querySelector('.contact-form');
